@@ -7,6 +7,15 @@ public struct AmountWithUnit: Codable {
     public var volumeUnit: Int16?
     public var sizeUnitId: UUID?
     public var sizeUnitVolumePrefixUnit: Int16?
+    
+    init(double: Double, unit: Int16, weightUnit: Int16? = nil, volumeUnit: Int16? = nil, sizeUnitId: UUID? = nil, sizeUnitVolumePrefixUnit: Int16? = nil) {
+        self.double = double
+        self.unit = unit
+        self.weightUnit = weightUnit
+        self.volumeUnit = volumeUnit
+        self.sizeUnitId = sizeUnitId
+        self.sizeUnitVolumePrefixUnit = sizeUnitVolumePrefixUnit
+    }
 }
 
 public struct Density: Codable {
