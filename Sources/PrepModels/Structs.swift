@@ -8,7 +8,7 @@ public struct AmountWithUnit: Codable {
     public var sizeUnitId: UUID?
     public var sizeUnitVolumePrefixUnit: Int16?
     
-    init(double: Double, unit: Int16, weightUnit: Int16? = nil, volumeUnit: Int16? = nil, sizeUnitId: UUID? = nil, sizeUnitVolumePrefixUnit: Int16? = nil) {
+    public init(double: Double, unit: Int16, weightUnit: Int16? = nil, volumeUnit: Int16? = nil, sizeUnitId: UUID? = nil, sizeUnitVolumePrefixUnit: Int16? = nil) {
         self.double = double
         self.unit = unit
         self.weightUnit = weightUnit
